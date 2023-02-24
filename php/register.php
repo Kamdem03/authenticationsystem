@@ -1,5 +1,5 @@
 <?php
-include_once 'database\databaseconnection.php';
+include_once '../database/databaseconnection.php';
 session_start();
 
     if(isset($_POST['register'])){
@@ -9,7 +9,7 @@ session_start();
         $password=password_hash($_POST['password'], PASSWORD_DEFAULT);
         $confirmpassword=$_POST['confirmpassword'];
 
-    if(empty($name) || ( $email) || ($password) || ($confirmpassword=$_POST)){
+    if(empty($name) || ( $email) || ($password) || ($confirmpassword)){
         echo "All fields are required";
     }
 
@@ -22,7 +22,7 @@ session_start();
     }
 
 //query to check if user exits
-        $check_user="SELECT * FROM users 'name'=$name, 'email'=$email, 'password'=$password";
+        $check_user = "SELECT * FROM  users  WHERE 'name'=$name, 'email'=$email, 'password'=$password";
 
         $result= mysqli_query($conn,$check_user);
         if(mysqli_num_rows($result)>0){
