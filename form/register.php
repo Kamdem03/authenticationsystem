@@ -7,10 +7,11 @@
     <title>Registration</title>
 </head>
 <body>
-    <form action="dashboard.php" method="post">
+    <form action="" method="post">
         Name: <input type="text" name="name"><br><br>
+        Email: <input type="text" name="email"><br><br>
         Password: <input type="password" name="password"> <br><br>
-        Confirm password: <input type="password" name="password"> <br><br>
+        Confirm password: <input type="password" name="confirmpassword"> <br><br>
         <input type="submit" name="register" value="Register">
     </form>
 </body>
