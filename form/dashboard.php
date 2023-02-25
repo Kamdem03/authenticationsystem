@@ -7,8 +7,11 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <h2>Welcome <?php echo $_SESSION['name']?></h2>
+    <h2>HELLO<?php $_POST['name']?></h2>
+    <div>
+        <h4>Welcome to your dashboard</h4>
 
-    <a href="../form/logout.php">Logout</a>
+        <a href="../php/logout.php"> Logout</a>
+    </div>
 </body>
 </html>

@@ -12,7 +12,6 @@ session_start();
         $result=mysqli_query($conn,$check_user);
          
          if (mysqli_num_rows($result)>0){
-            echo "login successfully";
             header("Location: ../form.php/dashboad.php");
          }
          else{

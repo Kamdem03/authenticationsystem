@@ -4,5 +4,5 @@
     session_unset();
     session_destroy();
 
-    echo header("Location: ../form/logout.php");
+    echo header("Location: ../form/login.php");
 ?>
