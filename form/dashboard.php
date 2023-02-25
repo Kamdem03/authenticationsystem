@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +11,9 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <h2>HELLO<?php $_POST['name']?></h2>
+    <h2>HELLO<?php $_SESSION['name'];?></h2>
     <div>
-        <h4>Welcome to your dashboard</h4>
+        <h3>Welcome to your dashboard</h3>
 
         <a href="../php/logout.php"> Logout</a>
     </div>
