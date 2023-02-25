@@ -11,11 +11,11 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <h2>HELLO<?php $_SESSION['name'];?></h2>
+    <h2>HELLO <?php echo $_SESSION['name'];?></h2>
     <div>
-        <h3>Welcome to your dashboard</h3>
+        <h3>Welcome to your dashboard.</h3>
 
-        <a href="../php/logout.php"> Logout</a>
+        <a href="../php/logout.php">Logout</a>
     </div>
 </body>
 </html>
